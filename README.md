@@ -1,4 +1,4 @@
-# Movie & TV Relational Database (Oracle SQL)
+# Entertainment Relational Database – Oracle SQL Schema Design
 
 This project implements a relational database for managing movies, TV shows, actors, directors, genres, users, and reviews.
 
