@@ -1,43 +1,49 @@
 # Movie & TV Relational Database (Oracle SQL)
 
-This project was developed as part of CCPS 510 (Database Systems) and models a structured relational database for managing movies, TV shows, actors, directors, genres, users, and reviews.
+This project implements a relational database for managing movies, TV shows, actors, directors, genres, users, and reviews.
 
-The goal of the project was to design a normalized relational schema, enforce data integrity through constraints, and demonstrate meaningful query analysis across related entities.
+The focus of this project was designing a normalized schema (3NF), enforcing referential integrity, and writing practical SQL queries that demonstrate how structured data can support reporting and analysis.
 
 ---
 
-## Project Overview
+## Overview
 
 The database includes:
 
-- Entity modeling and normalization
+- Fully normalized relational schema
 - Primary and foreign key relationships
-- Business rule enforcement through constraints
-- Sample dataset population
-- Analytical SELECT queries across multiple joins
+- Constraint-based business rule enforcement
+- Sample dataset for testing and validation
+- Multi-table analytical queries using joins and aggregation
 
-This project demonstrates structured schema design, relational modeling, and SQL query development.
+The goal was not just to store data, but to design a clean and scalable structure that reflects real-world media relationships.
 
 ---
 
-## Files Included
+## Project Files
 
-- `movie_tvDB-tablecreation-V2.sql`  
-  Contains table definitions, constraints, and relationships.
+**01_schema.sql**  
+Creates tables, defines relationships, and enforces constraints.
 
-- `movie_tvDB-datainsert-V2.sql`  
-  Populates the database with sample data.
+**02_seed_data.sql**  
+Inserts structured sample data.
 
-- `SELECT queries.sql`  
-  Example analytical queries demonstrating joins, aggregation, filtering, and reporting.
+**03_queries.sql**  
+Contains analytical queries demonstrating joins, grouping, and filtering.
 
-- ERD and documentation PDFs  
-  Entity Relationship Diagram and project documentation explaining design decisions and normalization strategy.
+**ERD.pdf**  
+Entity Relationship Diagram of the database design.
+
+**design-report.pdf**  
+Explains normalization decisions and structural trade-offs.
+
+**project-presentation.pdf**  
+Summary of database design and implementation.
 
 ---
 
 ## How to Run
 
-1. Execute `movie_tvDB-tablecreation-V2.sql`
-2. Execute `movie_tvDB-datainsert-V2.sql`
-3. Run queries from `SELECT queries.sql`
+1. Execute `01_schema.sql`
+2. Execute `02_seed_data.sql`
+3. Run queries from `03_queries.sql`
